@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes btnSlideInFromRight {
+0% {
+    transform: translateX(700%);
+}
+100% {
+    transform: translateX(0);
+}
+}
+@keyframes slideOutFromLeft {
+0% {
+    transform: translateX(0%);
+}
+100% {
+    transform: translateX(200%);
+}
+}
+@keyframes btnSlideOutFromLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(700%);
+    }
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+    25% {
+      transform: translateY(-20);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    75% {
+      transform: translateY(-20%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+}
+body, html {
+    background-color:#43b480;
+
+    font-family: 'Encode Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: #34734c;
+    border-bottom: 3px double;
+    border-color: rgb(255, 255, 255);
+}
+
+nav a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+.nav-home {
+    border-bottom-style: solid;
+    border-color:#f6cf67; 
+}
+
+.nav-links a{
+    padding: 0rem 1rem;
+}
+
+.nav-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 1rem;
+    color:yellow;
+}
+
+#show-map {
+    position: absolute;
+    top: 23rem;
+    right: 2px;
+    color: #ffd900;
+    background-color: rgba(65, 121, 12, 0.864);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border-style: outset;
+    border-color: rgb(242, 178, 41);
+    font-weight: 1000;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#show-map:hover {
+    transition-duration: 200ms;
+    background-color:rgba(242, 178, 41, 0.529);
+    cursor: pointer;
+}
+
+#hide-map {
+        position: absolute;
+        top: 23rem;
+        right: 28rem;
+        color: #ffd900;
+        background-color: rgba(65, 121, 12, 0.864);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        border-style: outset;
+        border-color: rgb(242, 178, 41);
+        font-weight: 1000;
+        font-size: 2rem;
+        text-align: center;
+        visibility: hidden;
+        
+}
+
+#hide-map:hover {
+    background-color:rgb(242, 178, 41);
+    cursor: pointer;
+}
+
+iframe {
+    position: absolute;
+    top:4rem;
+    right: 0;
+    width: 30rem;
+    height: 44.9rem;
+    visibility: hidden;
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(55, 101, 128);
+    background-image: url('img/inneTvå.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    color:white;
+}
+
+.welcome-container {
+    width: 50rem;
+    background-color: rgba(29, 11, 11, 0.349);
+    padding: 6rem 0rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.welcome-container h2 {
+    color: yellow;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    font-size: 2.3rem;
+    padding: 1rem;
+}
+
+.welcome-container h1 {
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    font-size: 5rem;
+    padding: 1rem;
+    font-family: 'Pacifico', cursive;
+}
+
+#slogan {
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.welcome-container p {
+    padding: 1rem;
+    font-size: 1rem;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.logo-name-container{
+    display: flex;
+    justify-content: center;
+}
+
+.green {
+    color: #37b467;
+}
+
+.red {
+    color: #da4840;
+}
+
+.big-number {
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+#order {
+    background-color:yellow; 
+    border-style: solid;
+    border-color: rgba(253, 255, 254, 0.659);
+    border-width: 0.1rem;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+#order:hover {
+    background-color: rgb(242, 178, 41);
+    cursor: pointer;
+}
+
+#meny {
+    background-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-color: rgba(253, 255, 254, 0.659);
+    border-width: 0.1rem;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    color: white;
+    font-weight: 1000;
+    border-radius: 1rem;
+}
+
+
+.info-container {
+    background-color: #34734c;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+
+    padding: 10px;
+}
+
+.info-whiter {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.info-grey {
+    font-size:1rem;
+    color:rgba(255, 255, 255, 0.775);
+}
+
+.info-highlight {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.lunch-paket-pizzor {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#our-menu {
+    margin-bottom: 1rem;
+}
+
+.dagens {
+    background-color: rgb(8, 114, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+    color: white;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: yellow;
+    width: 30rem;
+    margin: auto;
+}
+
+.dagens h5 {
+    padding: 0.5rem;
+    color: yellow;
+}
+
+#dagens-dagens {
+    font-size: 1.3rem;
+}
+#dagens-tider {
+    font-size: 1rem;
+}
+.dagens p {
+    padding: 0.3rem;
+}
+
+
+.menyer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #43b480;
+    color: rgb(255, 255, 255);
+
+}
+
+h3 {
+    background-color: #B8544F;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.658);
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+
+}
+
+.high__res__container1,
+.high__res__container2,
+.high__res__container3,
+.high__res__container4,
+.high__res__container5,
+.high__res__container6,
+.high__res__container7,
+.high__res__container8{
+    display: flex;
+    padding: 2rem 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 0.5rem;
+}
+
+.meny__header__pizza,
+.meny__header__mexikan,
+.meny__header__amerikan,
+.meny__header__sallad,
+.meny__header__pasta,
+.meny__header__kebab,
+.meny__header__inbakade,
+.meny__header__halvInbakade {
+    color:#f6cf67;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    padding-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #34734c;
+    color: #fff;
+}
