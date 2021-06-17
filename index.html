@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://css.gg/chevron-double-up.css' rel='stylesheet'>
     <script defer src="main.js"></script>
     <title>Dalens pizza</title>
 </head>
@@ -21,7 +22,31 @@
             <a class="five" href="#">Galleri</a>
             <hr />
         </div>
-    </nav>
+        <button onclick="showPhoneNav()" id="nav-phone-show">
+          <svg id="show-svg" viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="10" rx="8"></rect>
+              <rect y="30" width="100" height="10" rx="8"></rect>
+              <rect y="60" width="100" height="10" rx="8"></rect>
+          </svg>
+          </button>
+
+          <button onclick="hidePhoneNav()" id="nav-phone-hide-new">
+            <svg id="show-svg" viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="10" rx="8"></rect>
+              <rect y="30" width="100" height="10" rx="8"></rect>
+              <rect y="60" width="100" height="10" rx="8"></rect>
+          </svg>
+          </button>
+      </nav>
+      <div id="nav-links-phone">
+          <ul>
+          <li id="phone-one" ><a href="#our-menu">Meny</a></li>
+          <li id="phone-two"><a id="nav-kontakt" href="#">Kontakta oss</a></li>
+          <li id="phone-three"><a href="#">Hitta</a></li>
+          <li id="phone-four"><a href="#">Galleri</a></li>
+      </ul>
+      <button onclick="hidePhoneNav()" id="nav-phone-hide"></button>
+      </div>
 
     <section class="welcome-page">
         <div class="welcome-container">
@@ -37,12 +62,7 @@
         </div>  
     </section>
     
-   <button id="show-map" onclick="showMap()"><div class="map-slideout">
-        <p >&LeftArrow;</p>
-    </div></button> 
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037.6572342000422!2d18.10026951607063!3d59.288579981644546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f78399ec05b13%3A0xcdb2ee9647123a9e!2sDalens%20Pizzeria!5e0!3m2!1ssv!2sse!4v1623513496017!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-   </iframe>
-   <button id="hide-map" onclick="hideMap()"> &rightarrow; </button>
+ 
     <section class="info-container">
         <div class="number">
             <p class="info-highlight"> &phone; 08-39 22 09</p>
@@ -297,11 +317,35 @@
                     </ul>
                   </section>  
 
+
+                  <section class="high__res__container9">
+                    <ul id="hamburgare">
+                      <h4 class="meny__header__hamburgare">Hamburgare</h4>
+                        <li>Hamburgare 90g</li>
+                        <li>Chicken Burger</li>
+                        <li>Fish Burger</li>
+                        <li>Hamburgare 150g</li>
+                        <li>Spicy Hamburgare 150g</li>
+                        <li>Double Cheesburger</li>
+                        <li>Angus Specialburgare 200g</li>
+                        <li>Vegan Burger</li>
+                        <li>Spicy Vegan Burger</li>
+                        <li>Vegetarisk Bugare</li>
+                    </ul>
+                  </section>
     </section>
+  </iframe>
+  
+  <iframe id="big-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2037.6572342000422!2d18.10026951607063!3d59.288579981644546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f78399ec05b13%3A0xcdb2ee9647123a9e!2sDalens%20Pizzeria!5e0!3m2!1ssv!2sse!4v1623513496017!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <footer>
+        <a href="#"><i class="gg-chevron-double-up"></i></a>
+        <div class="footer-info">
+          <p>Kontakt: 08-39 22 09</p>
+          <p id="footer-copyright">Copyright &copy;2021 All rights reserved</p>
+          <p id="footer-faded">*hemsida skapad av Isak Anderson</p>
+      </div>
+        <a href="#"><i class="gg-chevron-double-up"></i></a>
 
-
-    <footer>
-        Copyright &copy; Dalens Pizzeria - 2021 | created by isak.anderson9@gmail.com
     </footer>
 </body>
 </html>
