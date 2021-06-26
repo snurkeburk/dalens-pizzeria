@@ -96,6 +96,7 @@ body, html {
     background-color:#43b480;
     font-family: 'Encode Sans', sans-serif;
     scroll-behavior: smooth;
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2012/10/09/18695/7275b4d8bd0b00d36c0c506eb2047020.jpg');
 }
 
  
@@ -357,6 +358,7 @@ nav a {
 
 #our-menu {
     margin-bottom: 1rem;
+    font-size: 1.7rem;
 }
 
 .dagens {
@@ -372,6 +374,8 @@ nav a {
     border-color: rgba(255, 255, 0, 0.789);
     width: 30rem;
     margin: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .dagens h5 {
@@ -396,6 +400,12 @@ nav a {
     justify-content: space-evenly;
     background-color: #43b480;
     color: rgb(255, 255, 255);
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2012/10/09/18695/7275b4d8bd0b00d36c0c506eb2047020.jpg');
+    background-size: cover;
+    border-top-style: solid;
+    border-width: 0.1px;
+    border-color: rgba(255, 255, 255, 0.556);
+box-shadow: 0px -16px 26px 11px #f3e40e0e;
 }
 
 h3 {
@@ -417,13 +427,19 @@ h3 {
 .high__res__container6,
 .high__res__container7,
 .high__res__container8,
-.high__res__container9{
+.high__res__container9,
+.high__res__container10{
     display: flex;
     padding: 2rem 4rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-size: 1.3rem;
+    border-top-style: dotted;
+    border-width: 0.4rem;
+    border-color: #e4c86a;
+    margin: 1rem;
+
 
 }
 
@@ -440,12 +456,14 @@ li {
 .meny__header__kebab,
 .meny__header__inbakade,
 .meny__header__halvInbakade,
-.meny__header__hamburgare {
+.meny__header__hamburgare,
+.meny__header__wings {
     color:#f6cf67;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     text-decoration: underline;
     text-underline-offset: 5px;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 #nav-phone-show,
@@ -651,6 +669,8 @@ footer a {
         border-color: rgba(255, 255, 0, 0.789);
         width: 90vw;
         margin: auto;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
     }
 
     .high__res__container1 {
@@ -716,7 +736,8 @@ footer a {
 .high__res__container6,
 .high__res__container7,
 .high__res__container8,
-.high__res__container9{
+.high__res__container9,
+.high__res__container10{
     display: flex;
     padding: 2rem 4rem;
     font-family: 'Raleway', sans-serif;
