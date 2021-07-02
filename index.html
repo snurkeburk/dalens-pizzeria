@@ -22,7 +22,7 @@
             <a class="five" href="#">Galleri</a>
             <hr />
         </div>
-        <button onclick="showPhoneNav()" id="nav-phone-show">
+        <button id="nav-phone-show">
           <svg id="show-svg" viewBox="0 0 100 80" width="40" height="40">
               <rect width="100" height="10" rx="8"></rect>
               <rect y="30" width="100" height="10" rx="8"></rect>
@@ -45,7 +45,7 @@
           <li id="phone-three"><a href="#">Hitta</a></li>
           <li id="phone-four"><a href="#">Galleri</a></li>
       </ul>
-      <button onclick="hidePhoneNav()" id="nav-phone-hide"></button>
+      <button id="nav-phone-hide"></button>
       </div>
 
     <section class="welcome-page">
@@ -78,7 +78,7 @@
             </div>
     </section>
 
-    <h3 id="our-menu">Vår meny</h3>
+    <p id="our-menu">Vår meny</p>
     <section class="dagens">
     <h5 id="dagens-dagens">Dagens lunch 95:-</h5>
     <h5 id="dagens-tider">Kl. 11.00 - 14.00</h5>
@@ -145,83 +145,145 @@
 
 
     <section class="menyer">
-        <section class="high__res__container1" >
-            <div class="pris-1">
+      <section class="high__res__container1" >
+        <div class="pris-1">
             <!--<h4 class="meny__header__kebab">Kebab meny</h4>-->
             <ul id="pizzaMenyEtt">
                 <h4 class="meny__header__pizza">Pizza prisklass 1</h4>
                   <li>1. Margherita 90:-</li>
+                  <li class="ing">Tomatsås, ost</li>
                   <li>2. Vesuvio  90:-</li>
+                  <li class="ing">Skinka</li>
                   <li>3. Al Funghi  90:-</li>
+                  <li class="ing">F.champinjoner</li>
                   <li>4. Galini  95:-</li>
+                  <li class="ing">Kyckling, curry</li>
                   <li>5. Bolognese  95:-</li>
+                  <li class="ing">Köttfärs, lök</li>
                   <li>6. Cacciatore 95:-</li>
+                  <li class="ing">Salami, lök</li>
                   <li>7. Al Tonno  95:-</li>
+                  <li class="ing">Tonfisk, lök</li>
                   <li>8. Napolitana 95:-</li>
+                  <li class="ing">Sardeller, oliver</li>
                   <li>9. Capricciosa 95:-</li>
+                  <li class="ing">Skinka, champ</li>
                   <li>10. Bussola 95:-</li>
+                  <li class="ing">Skinka, räkor</li>
                   <li>11. Hawaii 95:-</li>
-                  <li>12. Dell opera95:-</li>
+                  <li class="ing">Skinka, ananas</li>
+                  <li>12. Dell opera 95:-</li>
+                  <li class="ing">Skinka, tonfisk</li>
                   <li>13. Isabella 95:-</li>
+                  <li class="ing">Skinka, fårost</li>
                   <li>14. Marinara 95:-</li>
+                  <li class="ing">Räkor, musslor</li>
                   <li>15. Paradiso 95:-</li>
+                  <li class="ing">Räkor, champ</li>
                   <li>16. Gamba  95:-</li>
+                  <li class="ing">Räkor, f.vitlök, persilja</li>
                   <li>17. Gorgonzola  95:-</li>
+                  <li class="ing">Gorgonzola, tomatskivor, lök</li>
                   <li>18. Viking  95:-</li>
+                  <li class="ing">Salami, tomatskivor, oliver</li>
                   <li>19. Pompeii  95:-</li>
+                  <li class="ing">Bacon, lök, ägg</li>
                 </div>
                 <div class="pris-2">
                 <h4 class="meny__header__pizza">Pizza prisklass 2</h4>
-                  <li>20. Caruso  100:-</li>  
+                  <li>20. Caruso  100:-</li>
+                  <li class="ing">Skinka, champ, räkor</li>  
                   <li>21. Prinessa  100:-</li>
+                  <li class="ing">Skinka, räkor, ananas</li>
                   <li>22. Lilla Picasso  100:-</li>
+                  <li class="ing">Skinka, gorgonzola, sparris, lök</li>
                   <li>23. Tropicana  100:-</li>
+                  <li class="ing">Skinka, ananas, banan, curry</li>
                   <li>24. Rhodos  100:-</li>
+                  <li class="ing">Skinka bacon, tomatskivor, bearnaisesås</li>
                   <li>25. Krabba  100:-</li>
+                  <li class="ing">Krabba, räkor, capris, f.vitlök</li>
                   <li>26. Florens  100:-</li>
+                  <li class="ing">Soltorkade tomater, kronärtkocka, f.vitlök, oliver</li>
                   <li>27. Jägarpizza  100:-</li>
+                  <li class="ing">Peperonikorv, salami, f.vitlök, oliver</li>
                   <li>28. Vagabond  100:-</li>
+                  <li class="ing">Räkor, musslor, tonfisk, sardeller</li>
                   <li>29. Amigo  100:-</li>
+                  <li class="ing">Köttfärs, bacon, tomatskivor, fefferoni, cayennepeppar</li>
                   <li>30. Melisa  100:-</li>
+                  <li class="ing">Kyckling, ananas, banan, jordnötter, curry</li>
                   <li>31. Fårost Pizza  100:-</li>
+                  <li class="ing">Fårost, tomatskivor, fefferoni, lök, cayennepeppar</li>
                   <li>32. Bella Mari  100:-</li>
+                  <li class="ing">Skinka, räkor, champ, paprika, lök, ost ovanpå (gratinerad)</li>
                   <li>33. Amore  100:-</li>
+                  <li class="ing">Skinka, salami, champ, gorgonzola, lök</li>
                   <li>34. Vegetariana  100:-</li>
+                  <li class="ing">Tomatskivor, champ, paprika, kronärtskocka, lök, oliver</li>
                   <li>35. Quattro Stagioni  100:-</li>
+                  <li class="ing">Skinka, champ, räkor, musslor, kronärtskocka, oliver</li>
       
                 </div>
                 <div class="pris-3">
                 <h4 class="meny__header__pizza">Pizza prisklass 3</h4>
                   <li>36. Mamma Rosa   110:-</li>
+                  <li class="ing">Oxfilé, fläskfilé, bearnaisesås</li>
                   <li>37. Zola   110:-</li>
+                  <li class="ing">Oxfilé, gorgonzola, sparris, lök</li>
                   <li>38. Frisörens   110:-</li>
+                  <li class="ing">Fläskfilé, skinka, salami, lök</li>
                   <li>39. Oxfile bearnaise   110:-</li>
+                  <li class="ing">Oxfilé, f.champ, lök, bearnaisesås</li>
                   <li>40. Duras   110:-</li>
+                  <li class="ing">Fläskfilé, banan, curry, bearnaisesås</li>
                   <li>41. Marmaris   110:-</li>
+                  <li class="ing">Fårost, ägg, lök, sucuk (turkiska lammkorv)</li>
                   <li>42. Naxos    110:-</li>
+                  <li class="ing">Oxfilé, räkor, paprika, purjolök, cayennepeppar</li>
                   <li>43. Kebab Pizza   110:-</li>
+                  <li class="ing">Kebab, tomatskivor, fefferoni, lök, kebabsås</li>
                   <li>44. Från jord till bord   110:-</li>
+                  <li class="ing">Aubergine, soltorkade tomater, f.champ, f.paprika, purjolök</li>
                   <li>45. Mästarens   110:-</li>
+                  <li class="ing">Pepperonikorv, soltorkade tomater, jalapeño, purjolök, cayennepeppar</li>
                   <li>46. Kreta   110:-</li>
+                  <li class="ing">Köttfärs, skinka, salami, ägg, lök, cayennepeppar</li>
                   <li>47. Poker   110:-</li>
+                  <li class="ing">Oxfilé, fläskfilé, bacon, tomatskivor, f.vitlök, fefferoni, cayennepeppar</li>
                   <li>48. Istanbul    110:-</li>
+                  <li class="ing">Surimi, räkor, gorgonzola, tomatskivor, kronärtkocka, green chili, capris</li>
                 </div>
                 <div class="pris-4">
                 <h4 class="meny__header__pizza">Pizza prisklass 4</h4>
                   <li>49. Quattro Formaggi   110:-</li>
+                  <li class="ing">Mozzarellaost, gorgonzolaost, fårost, parmasan</li>
                   <li>50. Super   110:-</li>
+                  <li class="ing">Skinka, räkor, f.champ, oxfilé, fläskfilé</li>
                   <li>51. Yasmin   110:-</li>
+                  <li class="ing">Skinka, räkor, f.champ, bacon, fläskfilé, lök, bearnaisesås</li>
                   <li>52. Salamino   110:-</li>
+                  <li class="ing">Mozzarella, salami, tomatskivor, f.basilika</li>
                   <li>53. Mezzaluna   110:-</li> 
+                  <li class="ing">Mozzarella, skinka, permaskinksa, rucolla</li>
                   <li>54. Smaskens   110:-</li>
+                  <li class="ing">Mozzarellaost, skinka, räkor, f.champ, f.basilika</li>
                   <li>55. Scampi   110:-</li>
+                  <li class="ing">Mozzarella, scampi, f.vitlök, grön pesto, persilja</li>
                   <li>56. Slott   110:-</li>
+                  <li class="ing">Mozzarella, f.champ, proscuitto, f.basilika, oliver</li>
                   <li>57. Crudo   110:-</li>
+                  <li class="ing">Mozzarella, prosciutto, f.paprika, rucolla, oliver</li>
                   <li>58. Ciao-Ciao   110:-</li>
+                  <li class="ing">Mozzarella, prosciutto, purjolök, pinjenötter, rucolla</li>
                   <li>59. Daniella   110:-</li>
+                  <li class="ing">Mozzarella, räkor, tomatskivor, f.vitlök, f.basilika</li>
                   <li>60. Venedig   110:-</li>
+                  <li class="ing">Mozzarella, oxfilé, f.champ, tomatskivor, purjolök, cayennepeppar</li>
                   <li>61. Napoli   110:-</li>
+                  <li class="ing">Mozzarella, parmasan, pepperonikorv, soltorkade tomater, f.vitlök, f.paprika</li>
                   <li>62. Fantasy   110:-</li>
+                  <li class="ing">Mozzarella, prosciutto, salami, f.champ, tomatskivor, purjolök, f.vitlök</li>
                 </ul>
             </div>
               </section>
@@ -230,11 +292,17 @@
               <ul id="mexikanMenyEtt">
               <h4 class="meny__header__mexikan">Mexikanska Pizzor</h4>
                 <li>63. Azteka     110:-</li>
+                <li class="ing">Skinka, jalapeño, tacosås, lacokryddmix, gräddfil</li>
                 <li>64. Acapuico   110:-</li>
+                <li class="ing">Oxfilé, jalapeño, lök, f.champ, f.vitlök, tacokryddmix, tacosås</li>
                 <li>65. Mexicano   110:-</li>
+                <li class="ing">Köttfärs, lök, f.vitlök, greenchili, tacokryddmix, tacosås</li>
                 <li>66. Den Gode   110:-</li>
+                <li class="ing">Kyckling, ananas, curry, paprika, green chili, tacosås</li>
                 <li>67. Den Onde   110:-</li>
+                <li class="ing">Fläskfilé, tomatskivor, paprika, lök, jalapeño, tacokryddmix, bearnaisesås</li>
                 <li>68. Den Fule   110:-</li>
+                <li class="ing">Tonfisk, paprika, oliver, majs, f.champ, green chili, tacosås</li>
                 </ul>
               </section>
       
@@ -242,45 +310,75 @@
               <ul id="amerikanMenyEtt">
                 <h4 class="meny__header__amerikan">Amerikanska pan pizzor</h4>
                   <li>1. Hunolulu (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, skinka, räkor, kyckling, ananas, banan, curry</li>
                   <li>2. San Francisco (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, skinka, räkor, f.champ, tomatskivor, f.paprika</li>
                   <li>3. Texas (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, skinka, gorgonzola, tomatskivor, f.paprika, lök</li>
                   <li>4. Miami (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, salami, räkor, sparris, kronärtkocka, f.vitlök, lök, oliver</li>
                   <li>5. Louisana (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, fläskfilé, bacon, tomatskivor, f.paprika</li>
                   <li>6. Dallas (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, oxfilé, tomatskivor, f.champ, lök, f.vitlök, cayennepeppar</li>
                   <li>7. Orlando (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, fläskfilé, räkor, lök, f.vitlök, cayennepeppar</li>
                   <li>8. New York (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, skinka, bacon, köttfärs, lök, cayennepeppar</li>
                   <li>9. Sofia (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, kebab, tomatskivor, lök, fefferoni, kebabsås</li>
                   <li>10. Vulkano (120:-, 170:-)</li>
+                  <li class="ing">Tomatsås, ost, bacon soltorkade tomater, aubergine, jalapeño, lök</li>
                 </ul>
               </section>
       
             <section class="high__res__container4" >
               <ul id="salladMenyEtt">
                 <h4 class="meny__header__sallad">sallader</h4>
+                <li class="sallad-notera">Isbergssallad, tomat, gurka, bröd och smör ingår i alla sallader!</li>
                   <li>1. Ost & skink sallad  85:-</li>
+                  <li class="ing">Ost, skinka, ananas, majs, ärtor</li>
                   <li>2. Räksallad  85:-</li>
+                  <li class="ing">Ost, räkor, sparris, ägg, citron, majs, ärtor</li>
                   <li>3. Hawaii sallad  85:-</li>
+                  <li class="ing">Ost, skinka, ananas, banan, ägg, majs, ärtor</li>
                   <li>4. Kyckling sallad  85:-</li>  
+                  <li class="ing">Ost, kyckling, ananas, ägg, majs, ärtor</li>
                   <li>5. Krabbfish sallad  85:-</li>
+                  <li class="ing">ost, krabba, ägg, citron, majs, ärtor</li>
                   <li>6. Kebab sallad  85:-</li>
+                  <li class="ing">Ost, kebab, rödlök, fefferoni, kebabsås</li>
                   <li>7. Grekisk sallad  85:-</li>
+                  <li class="ing">Fårost, rödlök, f.paprika, oliver, fefferoni</li>
                   <li>8. Tonfisk sallad  85:-</li>
-                  <li>9. Capricciosa  85:-</li>
+                  <li class="ing">Tonfisk, rödlök, citron, oliver, fefferoni</li>
+                  <li>9. Vegetarisk sallad  85:-</li>
+                  <li class="ing">F.champ, f.paprika, rödlök, ananas, sparris, oliver, kronärtkocka, majs, ärtor</li>
                   <li>10. Västkust sallad  85:-</li>
+                  <li class="ing">Räkor, musslor, f.champ, ägg, sparris, citron, majs, ärtor</li>
                   <li>11. Avokado sallad   90:-</li>
+                  <li class="ing">Skinka, räkor, avokado, f.champ, ägg, citron</li>
                   <li>12. Mozzarella sallad   90:-</li>
+                  <li class="ing">Mozzarella, permaskinksa, rödlök, oliver, f.basilika</li>
                   <li>13. Pasta sallad   90:-</li>
+                  <li class="ing">Valfri sallad med Pasta</li>
               </ul>
             </section>  
             <section class="high__res__container5" >
               <ul id="pastaMenyEtt">
                 <h4 class="meny__header__pasta">Pasta Rätter</h4>
                   <li>1. Spaghetti Bolognese 100:-</li>
+                  <li class="ing">Tomatsås, köttfärs</li>
                   <li>2. Pasta Carbonara 100:-</li>
+                  <li class="ing">Bacon, lök, ägg gula</li>
                   <li>3. Lasagne al Forno 105:-</li>
+                  <li class="ing"></li>
                   <li>4. Pasta Indiana 105:-</li>
+                  <li class="ing">Kyckling, ananas, f.paprika, curry</li>
                   <li>5. Pasta Gorgonzola 110:-</li>
+                  <li class="ing">Oxfilé, f.champ, gorgonzola, lök</li>
                   <li>6. Pasta Huset 110:-</li>
+                  <li class="ing">Fläskfilé, f.champ, f.paprika, lök</li>
               </ul>
             </section>
       
@@ -300,10 +398,15 @@
                 <ul id="inbakadeMenyEtt">
                   <h4 class="meny__header__inbakade">Inbakade Pizzor</h4>
                     <li>69. Calzone 95:-</li>
+                    <li class="ing">Tomatsås, ost, skinka</li>
                     <li>70. Alex 100:-</li>
+                    <li class="ing">Tomatsås, ost, köttfärs, lök, cayenne peppar</li>
                     <li>71. Sultan 110:-</li>
+                    <li class="ing">Ost, kebab, tomatskivor, lök, fefferoni, kebabsås</li>
                     <li>72. Flygande tefat (dubbel deg) 110:-</li>
+                    <li class="ing">Tomatsås, ost, skinka, räkor, f.champ</li>
                     <li>73. Globen (dubbel deg) 110:-</li>
+                    <li class="ing">Tomatsås, ost, salami, f.champ, lök</li>
                   </ul>
                 </section>  
       
@@ -311,9 +414,13 @@
                   <ul id="halvInbakadeMenyEtt">
                     <h4 class="meny__header__halvInbakade">Halv Inbakade Pizzor</h4>
                       <li>74. Dalens Special 110:-</li>
+                      <li class="ing">Tomatsås, ost, oxfilé, f.champ, paprika, tomatskivor, bearnaisesås</li>
                       <li>75. Amadeus 110:-</li>
+                      <li class="ing">Tomatsås, ost, fläskfilé, f.champ, tomatskivor, lök, bearnaisesås</li>
                       <li>76. Tonys Special 110:-</li>
+                      <li class="ing">Tomatsås, ost, kebab, tomatskivor, lök, f.vitlök, kebabsås</li>
                       <li>77. Ubåt 110:-</li>
+                      <li class="ing">Tomatsås, ost, oxfile, f.champ, purjolök, f.vitlök, bearnaisesås</li>
                     </ul>
                   </section>  
 
@@ -322,15 +429,25 @@
                     <ul id="hamburgare">
                       <h4 class="meny__header__hamburgare">Hamburgare</h4>
                         <li>Hamburgare 90g 69:-</li>
+                        <li class="ing">Ost, isbergssallad, gurka, f.tomat, rödlök, hamburgare-dressing och ketchup</li>
                         <li>Chicken Burger 69:-</li>
+                        <li class="ing">Friterad kycklingburgare, ost, isbergssallad, gurka, f.tomat, rödlök och currydressing</li>
                         <li>Fish Burger 69:-</li>
+                        <li class="ing">Friterad fiskburgare, ost, isbergsallad, gurka, f.tomater, rödlök och remouladsås</li>
                         <li>Hamburgare 150g 89:-</li>
+                        <li class="ing">Ost, isbergssallad, gurka, f.tomater, rödlök, hamburgare-dressing och ketchup</li>
                         <li>Spicy Hamburgare 150g 89:-</li>
+                        <li class="ing">Jalapeño, starksås, isbergssallad, gurka, f.tomater, rödlök, hamburgare-dressing och ketchup</li>
                         <li>Double Cheesburger 95:-</li>
+                        <li class="ing">2x 90g kött, 2x ost, isbergssallad, gurka, f.tomater, rödlök, hamburgare-dressing och ketchup</li>
                         <li>Angus Specialburgare 99kr </li>
+                        <li class="ing">Hemlagat bröd, ost, isbergssallad, gurka, tomater, rödlök, hamburgare-dressing och ketchup</li>
                         <li>Vegan Burger 89:-</li>
+                        <li class="ing">Veganburgare, veganost, vegan-majonäs, isbergssallad, rödlök, gurka och färsk tomater</li>
                         <li>Spicy Vegan Burger 89:-</li>
+                        <li class="ing">Veganburgare, veganost, vegan-majonäs, jalapeños, sirachasås, isbergssallad, rödlök, gurka, f.tomat</li>
                         <li>Vegetarisk Bugare 89:-</li>
+                        <li class="ing">Vegetarisk burgare, majonäs, isbergssallad, rödlök, gurka och färsk tomat</li>
                     </ul>
                   </section>
 
@@ -338,12 +455,18 @@
                   <section class="high__res__container10">
                     <ul id="wings">
                       <h4 class="meny__header__wings">Wings</h4>
-                      <li>(4st) Crispy Chicken Filets 89:-</li>
-                      <li>(4st) Spicy Drumsticks 89:-</li>
-                      <li>(10st) Buffalo Wings 89:-</li>
-                      <li>(8st) Crispy chiken Filets 149:-</li>
-                      <li>(8st) Spicy Drumsticks 149:-</li>
-                      <li>(20st) Buffalo Wings 149:- </li>
+                      <li>Taste it! Crispy Chicken Filets 89:-</li>
+                      <li class="ing">4st friterade kycklingfiléer</li>
+                      <li>Taste it! Spicy Drumsticks 89:-</li>
+                      <li class="ing">4st hela drumsticks</li>
+                      <li>Taste it! Buffalo Wings 89:-</li>
+                      <li class="ing">10st klassiska buffalo wings</li>
+                      <li> Share it! Crispy chiken Filets 149:-</li>
+                      <li class="ing">8st friterade kycklingfiléer, inkl. två dipp och pommes frittes</li>
+                      <li>Share it! Spicy Drumsticks 149:-</li>
+                      <li class="ing">8st hela drumsticks</li>
+                      <li>Share it! Buffalo Wings 149:- </li>
+                      <li class="ing">20st klassiska buffalo wings</li>
                     </ul>
                   </section>
         
