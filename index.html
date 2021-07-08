@@ -11,7 +11,19 @@
     <title>Dalens pizza</title>
 </head>
 <body>
-    <nav>
+   
+      <div id="nav-links-phone">
+          <ul>
+          <li id="phone-one" ><a href="#our-menu">Meny</a></li>
+          <li id="phone-two"><a id="nav-kontakt" href="#">Pizza</a></li>
+          <li id="phone-three"><a href="#">Hitta</a></li>
+          <li id="phone-four"><a href="#">Galleri</a></li>
+      </ul>
+      <button id="nav-phone-hide"></button>
+      </div>
+    
+    <section class="welcome-page">
+      <nav>
         <a href="#" class="nav-name"><img src="img/logodalen.png"></a>
         
         <div class="nav-links">
@@ -38,24 +50,13 @@
           </svg>
           </button>
       </nav>
-      <div id="nav-links-phone">
-          <ul>
-          <li id="phone-one" ><a href="#our-menu">Meny</a></li>
-          <li id="phone-two"><a id="nav-kontakt" href="#">Kontakta oss</a></li>
-          <li id="phone-three"><a href="#">Hitta</a></li>
-          <li id="phone-four"><a href="#">Galleri</a></li>
-      </ul>
-      <button id="nav-phone-hide"></button>
-      </div>
-
-    <section class="welcome-page">
         <div class="welcome-container">
             <h2>Välkommen till</h2>
             <div class="logo-name-container">
         <h1 class="green">Dalens</h1><h1 class="red">Pizzeria</h1>
       </div>
       <h4 id="big-number" class="big-number">&phone; 08-39 22 09</h4>
-      <p id="slogan">Ni ringer, Vi bakar</p>
+      <p id="slogan">Ni ringer, vi bakar</p>
       <p>Vi använder endast svenskt kött, Fräscha och färska råvaror!</p>
         <button onclick="showMap()" id="order">Hitta oss</button>
         <a href="#our-menu" id="meny">Se meny</a>
@@ -78,7 +79,23 @@
             </div>
     </section>
 
-    <p id="our-menu">Vår meny</p>
+    <div id="our-menu">
+      <p>Vår meny</p>
+      <div class="our-menu-links">
+      <a href="">Pizza</a>
+      <a href="#amerikanMenyEtt">Amerikanska pizzor</a>
+      <a href="#mexikanMenyEtt">Mexikanska pizzor</a>
+      <a href="#inbakadeMenyEtt">Inbakade pizzor</a>
+      <a href="#halvInbakadeMenyEtt">Halvt inbakade pizzor</a>
+      <a href="#kebabMenyEtt">Kebab</a>
+      <a href="#salladMenyEtt">Sallader</a>
+      <a href="#pastaMenyEtt">Pasta rätter</a>
+      <a href="#hamburgareMenyEtt">Hamburgare</a>
+      <a href="#wings">Wings</a>
+      <a href="">Veganska rätter</a>
+      <a href="">Vegetariskanska rätter</a>
+    </div>
+    </div>
     <section class="dagens">
     <h5 id="dagens-dagens">Dagens lunch 95:-</h5>
     <h5 id="dagens-tider">Kl. 11.00 - 14.00</h5>
