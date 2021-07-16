@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <script defer src="main.js"></script>
+
+    <title>Galleri</title>
+</head>
+<body>
+    <div id="nav-links-phone">
+        <ul>
+        <li id="phone-one" ><a href="#our-menu">Meny</a></li>
+        <li id="phone-two"><a id="nav-kontakt" href="#">Pizza</a></li>
+        <li id="phone-three"><a href="#">Hitta</a></li>
+        <li id="phone-four"><a href="./galleri.html">Galleri</a></li>
+    </ul>
+    <button id="nav-phone-hide"></button>
+    </div>
+  
+  <section class="welcome-page">
+    <nav>
+      <a href="#" class="nav-name"><img src="img/logodalen.png"></a>
+      
+      <div class="nav-links">
+          <a class="five" class="nav-home" href="./index.html">Hem</a>
+          <a class="two" href="./index.html">Meny</a>
+          <a class="three" id="nav-kontakt" href="./index.html">Kontakta oss</a>
+          <a class="four" href="#">Hitta</a>
+          <a class="one" href="./galleri.html">Galleri</a>
+          <hr />
+      </div>
+      <button id="nav-phone-show">
+        <svg id="show-svg" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="10" rx="8"></rect>
+            <rect y="30" width="100" height="10" rx="8"></rect>
+            <rect y="60" width="100" height="10" rx="8"></rect>
+        </svg>
+        </button>
+
+        <button onclick="hidePhoneNav()" id="nav-phone-hide-new">
+          <svg id="show-svg" viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="10" rx="8"></rect>
+            <rect y="30" width="100" height="10" rx="8"></rect>
+            <rect y="60" width="100" height="10" rx="8"></rect>
+        </svg>
+        </button>
+    </nav>
+    <div class="images">
+    <img class="img" id="img-one" src="img/pizza.jpg" alt="img one">
+    <img class="img" d="img-two" src="img/pizza.jpg" alt="img one">
+    <img class="img" id="img-three" src="img/pizza.jpg" alt="img one">
+</div>
+<p id="footer-copyright">Copyright &copy;2021 Dalens Pizzeria. All rights reserved</p>
+
+</body>
+</html>
